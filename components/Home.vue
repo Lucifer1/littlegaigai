@@ -6,7 +6,7 @@
       <span id="i">的</span>
       <span id="o">小</span>
       <span id="u">盖</span>
-      <span id="p">盖12</span>
+      <span id="p">盖</span>
     </div>
   </div>
 </template>
