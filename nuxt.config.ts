@@ -1,10 +1,16 @@
 export default defineNuxtConfig({
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: "page", mode: "out-in" },
   },
-  css: [
-    '@/assets/css/main.css',
-  ],
+  css: ["@/assets/css/main.css"],
+  runtimeConfig: {
+    // The private keys which are only available server-side
+    apiSecret: "123",
+    // Keys within public are also exposed client-side
+    public: {
+      apiBase: "/api",
+    },
+  },
   typescript: {
     shim: false,
   },
@@ -31,7 +37,7 @@ export default defineNuxtConfig({
         landscapeWidth: 1136,
       },
       tailwindcss: {},
-      autoprefixer: {}
-    }
-  }
+      autoprefixer: {},
+    },
+  },
 });

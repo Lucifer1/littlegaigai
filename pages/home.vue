@@ -11,10 +11,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'PageHome'
-}
+<script setup>
+const runtimeConfig = useRuntimeConfig()
+const appConfig  = useAppConfig()
+console.log('>>>', 'runtimeConfig0', runtimeConfig)
+console.log('>>>', 'app', runtimeConfig.app)
+console.log('>>>', 'public', runtimeConfig.public)
+console.log('>>>', 'appConfig', appConfig)
 </script>
 
 <style scoped>
