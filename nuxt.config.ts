@@ -1,4 +1,10 @@
 export default defineNuxtConfig({
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
+  },
+  css: [
+    '@/assets/css/main.css',
+  ],
   typescript: {
     shim: false,
   },
@@ -24,7 +30,8 @@ export default defineNuxtConfig({
         landscapeUnit: "vw",
         landscapeWidth: 1136,
       },
-      autoprefixer: {},
-    },
-  },
+      tailwindcss: {},
+      autoprefixer: {}
+    }
+  }
 });
