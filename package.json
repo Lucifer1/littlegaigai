@@ -14,5 +14,10 @@
     "postcss": "^8.4.22",
     "postcss-px-to-viewport": "^1.1.1",
     "tailwindcss": "^3.3.1"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "lodash-es": "^4.17.21",
+    "underscore": "^1.13.6"
   }
 }
