@@ -79,6 +79,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { formatDate } from '@/utils/Utils'
+import axios from 'axios'
 
 const cardBackground = ref('/img/header-demo.jpeg')
 const desc = ref(
@@ -97,7 +98,18 @@ const shareChannelList = [
 ]
 
 const shareAsImage = async (item: any) => {
-  console.log('>>>', 'share')
+  const res = await axios.get(
+    'https://blog-server-kappa-dusky.vercel.app/sales'
+  )
+  console.log('res', res)
+  // for (let i = 0; i < 100; i++) {
+  //   const res = axios.post('http://localhost:3000/sales', {
+  //     item: 'test' + i,
+  //     price: 100 + i,
+  //     quantity: 10,
+  //   })
+  //   console.log('res', i, res)
+  // }
 }
 </script>
 

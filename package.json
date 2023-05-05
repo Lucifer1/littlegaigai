@@ -16,6 +16,7 @@
     "tailwindcss": "^3.3.1"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "dayjs": "^1.11.7",
     "lodash-es": "^4.17.21",
     "underscore": "^1.13.6"
